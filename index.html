@@ -16,8 +16,10 @@ function setup()
 				devices.push(device);
 				var html_select = document.getElementById("selected_device");
 				var option = document.createElement("option");
+				alert(String(option));
 				option.text = device.name;
 				html_select.add(option);
+				alert(option)
 				alert(device.name);
 				
 				//Discover any other devices available to the application
