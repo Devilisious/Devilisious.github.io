@@ -13,12 +13,12 @@ function setup()
 		
 				//Add device to list of devices and to html select element
 				selected_device = device;
-				alert(selected_device);
 				devices.push(device);
 				var html_select = document.getElementById("selected_device");
 				var option = document.createElement("option");
 				option.text = device.name;
 				html_select.add(option);
+				aler(html_select.add(option));
 				
 				//Discover any other devices available to the application
 				BrowserPrint.getLocalDevices(function(device_list){
@@ -116,6 +116,6 @@ Selected Device: <select id="selected_device" onchange=onDeviceSelected(this);><
 <input type="button" value="Read" onclick="readFromSelectedPrinter()"><br/><br/>
 <input type="button" value="Send BMP" onclick="sendImage('Zebra_logobox.bmp');"><br/><br/>
 <input type="button" value="Send JPG" onclick="sendImage('ZebraGray.jpg');"><br/><br/>
-<input type="button" value="test" onclick="sendFile('wc.zpl');"><br/><br/>
+<input type="button" value="Send File" onclick="sendFile('wc.zpl');"><br/><br/>
 </body>
 </html>
