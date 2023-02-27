@@ -14,13 +14,15 @@ function setup()
 				//Add device to list of devices and to html select element
 				selected_device = device;
 				devices.push(device);
+				console.table(device);
+				console.table(devices);
 				var html_select = document.getElementById("selected_device");
 				var option = document.createElement("option");
 				option.text = device.name;
+				alert('device name : ' + device.name)
 				html_select.add(option);
 				alert('updated');
 				console.table(devices);
-				alert(Object.values(devices));
 				
 				//Discover any other devices available to the application
 				BrowserPrint.getLocalDevices(function(device_list){
