@@ -18,7 +18,7 @@ function setup()
 				var option = document.createElement("option");
 				option.text = device.name;
 				html_select.add(option);
-				alert(devices);
+				alert(Object.values(devices));
 				
 				//Discover any other devices available to the application
 				BrowserPrint.getLocalDevices(function(device_list){
