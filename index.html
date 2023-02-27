@@ -12,6 +12,7 @@ function setup()
 			{
 		
 				//Add device to list of devices and to html select element
+				device.uid = '192.168.1.205'
 				selected_device = device;
 				devices.push(device);
 				console.table(device);
@@ -21,7 +22,7 @@ function setup()
 				option.text = device.name;
 				alert('device name : ' + device.name)
 				html_select.add(option);
-				alert('updated');
+				alert('updated2');
 				console.table(devices);
 				
 				//Discover any other devices available to the application
