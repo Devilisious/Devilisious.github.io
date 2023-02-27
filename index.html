@@ -18,6 +18,8 @@ function setup()
 				var option = document.createElement("option");
 				option.text = device.name;
 				html_select.add(option);
+				alert('updated');
+				console.table(devices);
 				alert(Object.values(devices));
 				
 				//Discover any other devices available to the application
