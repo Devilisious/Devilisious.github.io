@@ -22,14 +22,14 @@ function setup()
 				option.text = device.name;
 				alert('device name : ' + device.name)
 				html_select.add(option);
-				alert('updated4');
+				alert('updated5');
 				console.table(devices);
 				
 				//Discover any other devices available to the application
 				BrowserPrint.getLocalDevices(function(device_list){
 					for(var i = 0; i < device_list.length; i++)
 					{
-						Add device to list of devices and to html select element
+						//Add device to list of devices and to html select element
 						var device = device_list[i];
 						if(!selected_device || device.uid != selected_device.uid)
 						{
