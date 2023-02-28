@@ -12,15 +12,14 @@ function setup()
 			{
 				//a
 				//Add device to list of devices and to html select element
-				alert('versie2');
-				device.uid = '192.168.1.201';
+				alert('versie3');
 				selected_device = device;
+				console.table(selected_device);
 				devices.push(device);
 				console.table(device);
 				console.table(devices);
 				var html_select = document.getElementById("selected_device");
 				var option = document.createElement("option");
-				option.text = "ZD420-300dpi (192.168.1.201)";
 				html_select.add(option);
 				console.table(devices);
 				
